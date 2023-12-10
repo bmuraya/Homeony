@@ -17,9 +17,15 @@ app.use(expressLayouts);
 app.set('layout', './layouts/main');
 app.set('view engine', 'ejs');
 
-
 app.get('/', function(req, res){
-    res.render('index');
+    const locals =
+    {
+        title: 'Nodejs Notes',
+        decription: 'free NodeJs  Note App'
+    }
+    
+    res.render('index', locals);
+    
 });
 
 app.listen(port, () => {
