@@ -9,6 +9,8 @@ exports.homepage = async (req, res) => {
             decription: 'free NodeJs  Note App',
         }
         
-        res.render('index', locals);     
+        res.render('index', locals);   
+        
+        
   
 }
